@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Ubuntu');
+
+body{
+  background: rgba(200,200,200,1)
+}
+
+h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight:400
+}
+
+#menu{
+	position: fixed; /*posición ajustada*/
+	bottom:2rem;
+	right:2.5rem;
+}
+
+.bg-azul{
+  background: rgba(38, 77, 149, 1.00)
+}
