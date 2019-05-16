@@ -29,17 +29,22 @@
     <!-- después de ir por las bibliotecas, puedes aprovecharlas-->
     <script>
 
-  $.getJSON("https://raw.githubusercontent.com/profesorfaco/dno037-2019/gh-pages/portfolio.json", function( curso ) {
-
-          console.log(curso);
+    $.getJSON("https://raw.githubusercontent.com/profesorfaco/dno037-2019/gh-pages/portfolio.json", function(curso) {
 
         $.each(curso, function(i, integrante) {
-          $("#cuestiones").append("<h2 class= 'mt-5 bg-azul py-1 pl-2 text-white'>" + integrante.nombre + "</h2>");
 
-          $.each(curso[13].trabajos, function(i, trabajo) {
-              $("#cuestiones").append("<h5 class='border-top my-2 py-3'>" + trabajo.titulo + "</h5>").append("<img src='" + trabajo.imagen + "'class='img-fluid mt-3'>").append("<p>" + trabajo.descriptor + "</p>");
-          });
+            if (i != 0 && i != 19) {
+
+                  $("#cuestiones").append("<h2 class= 'mt-5 bg-azul py-1 pl-2 text-white'>" + integrante.nombre + "</h2>");
+
+                $.each(integrante.trabajos, function(i, trabajo) {
+                    $("#cuestiones").append("<h5 class='mt-5 mb-2'>" + trabajo.titulo + "</h5>").append("<img src='" + trabajo.imagen + "'class='img-fluid mt-3'>").append("<p class='my-3 px-1'>" + trabajo.descriptor + "</p>");
+                });
+
+            }
+
         });
+
     });
     </script>
   </body>

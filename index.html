@@ -11,7 +11,7 @@
     <div class="container">
       <div class="row py-5">
         <div class="col-11 col-sm-10 mx-auto">
-          <h1>Mis Trabajos</h1>
+          <h1>Rocío Martín | Trabajos</h1>
           <p class = "lead"> Estudiante de Diseño de la Pontificia Universidad Católica </p>
           <div id="cuestiones"></div>
         </div>
@@ -34,13 +34,17 @@
 
         console.log (curso);
 
-          $.each(curso[14].trabajos, function(i, trabajo) {
+
+
+          $.each(curso[13].trabajos, function(i, trabajo) {
               $("#cuestiones").append("<h5 class='border-top my-2 py-3'>" + trabajo.titulo + "</h5>").append("<img src='" + trabajo.imagen + "'class='img-fluid mt-3'>").append("<p>" + trabajo.descriptor + "</p>");
           });
         });
 
+
+
       //en el código fuente, h1 contiene un mensaje distinto del que se ve
-      document.getElementsByTagName("h1")[0].innerHTML = "Hola mundo!";
+      document.getElementsByTagName("h1")[0].innerHTML = "Rocío Martín | Trabajos";
     </script>
   </body>
 </html>

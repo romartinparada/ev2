@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Ubuntu');
 
 body{
-  background: rgba(200,200,200,1)
+    background: linear-gradient(to bottom, rgba(255,200,200,0.45) 0%, rgba(255,200,200,0.9) 100%)
 }
 
 h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight:400
+}
+
+h1{
   font-family: 'Source Sans Pro', sans-serif;
   font-family: 'Ubuntu', sans-serif;
   font-weight:400
@@ -17,5 +23,5 @@ h2{
 }
 
 .bg-azul{
-  background: rgba(38, 77, 149, 1.00)
+  background: rgba(255,200,200,0.9) 100%
 }
